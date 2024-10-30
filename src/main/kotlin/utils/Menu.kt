@@ -3,7 +3,6 @@ package appstock.utils
 import appstock.controllerService.ProductService
 import appstock.controllerService.ProveedorService
 import appstock.controllerService.UsuarioService
-import appstock.model.Proveedor
 
 /**
  * Clase que representa el menú principal de la aplicación.

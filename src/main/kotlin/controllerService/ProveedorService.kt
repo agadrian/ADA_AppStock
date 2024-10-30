@@ -1,6 +1,5 @@
 package appstock.controllerService
 
-import appstock.model.Producto
 import appstock.model.Proveedor
 import appstock.repository.ProveedorRepository
 
@@ -9,9 +8,10 @@ class ProveedorService(private val proveedorRepository : ProveedorRepository) {
 
     fun insertPrueba(){
         val lista = listOf<Proveedor>(
-            Proveedor("EmpresaSL", "Calle dos"),
-            Proveedor("Ferreteria SL", "Calle las madres"),
-            Proveedor("Panaderia juani", "Calle isabel")
+            Proveedor("Alimentacion Pedro", "C/ El bosque"),
+            Proveedor("Ferreteria SL", "C/ Malamanera 34"),
+            Proveedor("Ferrocarriles", "Avda. Gran Vía"),
+            Proveedor("InformaticTech S.A", "C/ TermoJul")
         )
 
         proveedorRepository.cargarProveedoresPrueba(lista)

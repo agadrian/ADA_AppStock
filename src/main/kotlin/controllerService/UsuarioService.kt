@@ -25,7 +25,6 @@ class UsuarioService(private val userRepository: UsuarioRepository) {
     }
 
 
-
     private fun pedirDatos(): List<String> {
         print("Introduce usuario: ")
         val user = readln()
