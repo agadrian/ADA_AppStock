@@ -1,8 +1,6 @@
 package appstock.repository
 
-import appstock.controllerService.ProductService
 import appstock.model.Producto
-import appstock.model.Proveedor
 import appstock.utils.HibernateUtils
 
 /**
@@ -69,7 +67,7 @@ class ProductoRepository {
         }
     }
 
-    fun modificarProducto(producto: Producto, nombreNuevo: String) {
+    fun modificarNombreProducto(producto: Producto, nombreNuevo: String) {
         val em = HibernateUtils.getEntityManager()
 
         try {

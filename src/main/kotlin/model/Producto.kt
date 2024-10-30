@@ -9,13 +9,13 @@ import java.util.*
 @Table(name = "productos")
 data class Producto(
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 10)
     val categoria: String,
 
     @Column(nullable = false, length = 50)
     val nombre: String,
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 100)
     val descripcion: String,
 
     @Column(nullable = false)

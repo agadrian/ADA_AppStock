@@ -1,6 +1,5 @@
 package appstock.controllerService
 
-
 import repository.UsuarioRepository
 
 class UsuarioService(private val userRepository: UsuarioRepository) {

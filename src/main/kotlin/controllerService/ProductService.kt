@@ -101,7 +101,7 @@ class ProductService(private val proveedorService: ProveedorService, private val
             print("\nIntroduce nombre nuevo: ")
             val nombreNuevo = readln()
             try {
-                productoRepository.modificarProducto(producto, nombreNuevo)
+                productoRepository.modificarNombreProducto(producto, nombreNuevo)
                 println("\nNombre del producto modificado con éxito.")
             }catch (e:Exception){
                 println("** ERROR - ${e.message}")

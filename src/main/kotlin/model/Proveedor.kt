@@ -1,13 +1,12 @@
 package appstock.model
 
 import jakarta.persistence.*
-import java.util.*
 
 @Entity
 @Table(name = "proveedores")
 data class Proveedor(
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     val nombre: String,
 
     @Column(nullable = false)
@@ -18,7 +17,8 @@ data class Proveedor(
     val productos: List<Producto> = mutableListOf<Producto>(),
 
     @Id
-    val id: String = UUID.randomUUID().toString(),
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long? = null,
 ){
     override fun toString(): String {
         return "Nombre: $nombre, Direccion: $direccion, Id: $id"
